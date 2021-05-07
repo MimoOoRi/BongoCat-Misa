@@ -1,0 +1,98 @@
+/*  */
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    overflow: hidden;  
+}
+
+body{
+    position: relative;
+}
+
+
+#keyboard{
+    position: relative;
+    margin: 50px auto;
+    height: 80px;
+    width: 400px; 
+}
+.keys{ 
+    position: relative;
+    width: auto;
+}
+.key{
+    position: relative;
+    display: inline-block !important;
+    border: 2px solid #b3b3b3;
+    background: #f5f5f5;
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    margin: 10px 0 0 0; 
+    text-align: left;
+    padding: 4px 0 0 6px; 
+    box-shadow: inset -6px -4px 2px 3px rgba(0, 0, 0, 0.1);
+}
+/* div */
+#container{    
+    position: relative;
+    margin: 50px auto;    
+    width: 800px;
+    height: 500px;
+    border: 1px solid pink; 
+    z-index: 0;
+}
+/* hr */
+#hr{
+    position: relative; 
+    width: 103%;
+    transform: rotate(13.5deg);
+    border: none;
+    height: 5px;
+    margin: 30% 0 0 -1.5%;
+    background: black;
+    z-index: -10;  
+}
+/* cat */
+.cat{
+     position: absolute; 
+     width: 100%;
+     height: 100%; 
+     z-index: 0; 
+  }
+.cat div{
+    position: inherit;
+    width: 100%;
+    height: 100%; 
+    background-position: -80px 80px;
+}
+.cat>#head{   
+    background-image:url(images/others/cat.png); 
+    z-index: 10;
+} 
+/* Listened Event */
+.cat>#mouth{  
+    background-image:url(images/others/mouth.png);
+    z-index: 10;
+}
+.cat>#leftHand{
+    background-image:url(images/others/paw-left.png);
+    z-index: 20;
+} 
+.cat>#rightHand{  
+    background-image:url(images/others/paw-right.png);
+    z-index: 20;
+}
+ 
+.cat .down,.cat .open{
+    background-position: 720px 80px;    
+    z-index: 20;
+}
+
+.cat>#bongo{ 
+    background: url(images/others/bongo.png) no-repeat -80px 80px; 
+    z-index: 10;     
+}
